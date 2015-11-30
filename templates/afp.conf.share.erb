@@ -1,0 +1,32 @@
+<%# SHARES -%>
+[<%= @name %>]
+path = <%= @share_path %>
+<%# name and path are mandatory -%>
+<% if @hosts_allow -%>
+hosts allow = <%= @hosts_allow %>
+<% end -%>
+<% if @hosts_deny -%>
+hosts deny = <%= @hosts_deny %>
+<% end -%>
+<% if @valid_users -%>
+valid users = <%= @valid_users %>
+<% end -%>
+<% if @read_only -%>
+read only = <%= @read_only %>
+<% end -%>
+<% if @rw_list -%>
+rwlist = <%= @rw_list %>
+<% end -%>
+<% if @disconnect_time -%>
+disconnect time = <%= @disconnect_time %>
+<% end -%>
+<% if @time_machine -%>
+time machine = <%= @time_machine %>
+<% end -%>
+<% if @enable_spotlight -%>
+spotlight = <%= @enable_spotlight %>
+<% end -%>
+<% if @cap_limit -%>
+vol size limit = <%= @cap_limit %>
+<% end -%>
+<%# SHARES end %>

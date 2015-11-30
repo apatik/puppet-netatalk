@@ -1,0 +1,46 @@
+{
+  "author": "Noel B. A. <contact@nbalonso.com>",
+  "dependencies": [
+    { "name": "puppetlabs/concat", "version_requirement": ">= 1.2.0" },
+    { "name": "puppetlabs/stdlib", "version_requirement": ">= 4.2.0" }
+  ],
+  "license": "BSD 3",
+  "name": "nbalonso-netatalk",
+  "operatingsystem_support": [
+      {
+        "operatingsystem": "RedHat",
+        "operatingsystemrelease": [
+          "6",
+          "7"
+        ]
+      },
+      {
+        "operatingsystem": "CentOS",
+        "operatingsystemrelease": [
+          "6",
+          "7"
+        ]
+      },
+      {
+        "operatingsystem": "OracleLinux",
+        "operatingsystemrelease": [
+          "6",
+          "7"
+        ]
+      },
+      {
+        "operatingsystem": "Scientific",
+        "operatingsystemrelease": [
+          "6",
+          "7"
+        ]
+      }
+  ],
+  "project_page": "https://github.com/nbalonso/puppet-netatalk",
+  "requirements": [],
+  "source": "https://github.com/nbalonso/puppet-netatalk",
+  "issues_url": "https://github.com/nbalonso/puppet-netatalk/issues",
+  "summary": "Puppet module for sharing files with OS X clients.",
+  "tags": ["afp","mac","osx","fileshare","netatalk"],
+  "version": "0.1.0"
+}

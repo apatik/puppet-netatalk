@@ -1,0 +1,46 @@
+;
+; This file is managed by puppet
+;
+; Netatalk 3.x configuration file
+;
+<%# GLOBAL %>
+; Global server settings
+[Global]
+<% if @host_name -%>
+hostname = <%= @host_name %>
+<% end -%>
+<% if @ad_domain -%>
+ad domain = <%= @ad_domain %>
+<% end -%>
+<% if @listen_iface -%>
+afp interfaces = <%= @listen_iface %>
+<% end -%>
+<% if @listen_ip -%>
+afp listen = <%= @listen_ip %>
+<% end -%>
+<% if @log_file -%>
+log file = <%= @log_file %>
+<% end -%>
+<% if @log_level -%>
+log level = <%= @log_level %>
+<% end -%>
+<% if @afp_stats -%>
+afpstats = <%= @afp_stats %>
+<% end -%>
+<% if @uam_list -%>
+uam list = <%= @uam_list %>
+<% end -%>
+<% if @guest_account -%>
+guest account = <%= @guest_account %>
+<% end -%>
+<% if @max_connections -%>
+max connections = <%= @max_connections %>
+<% end -%>
+<% if @login_message -%>
+login message = "<%= @login_message %>"
+<% end -%>
+<% if @mimic_model -%>
+mimic model = <%= @mimic_model %>
+<% end -%>
+<%# Shares below %>
+;Defined shares
