@@ -25,6 +25,8 @@ Every now and then I publish a final rpm in my blog [https://www.nbalonso.com](h
 
 Default values of the netatalk project are __not__ explained here because they might change in future versions. For that check the documentation [here](http://netatalk.sourceforge.net/3.1/htmldocs/).
 
+Ubuntu users might want to see [this](http://netatalk.sourceforge.net/wiki/index.php/Install_Netatalk_3.1.7_on_Ubuntu_14.10_Utopic) for repacking a recent v3.x version.
+
 ## Usage
 
 #### Server configuration
