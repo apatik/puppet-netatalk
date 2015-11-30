@@ -68,7 +68,10 @@ Write message status to the log file. Useful to know about open volumes, session
 
 #####`uam_list`
 
-List of user authentication modules. Used to allow empty passwords, kerberos authentication... Example `uam_list => 'uams_guest.so uams_dhx.so uams_dhx2.so uam_gss.so'`
+List of user authentication modules. Used to allow empty passwords, kerberos authentication...
+Valid values: for guests `uams_guest.so`, Diffie-Hellman key exchange `uams_dhx.so`, Diffie-Hellman key exchange v2 `uams_dhx2.so` and for Kerberos`uam_gss.so`
+
+Example `uam_list => 'uams_guest.so uams_dhx.so uams_dhx2.so uam_gss.so'`
 
 #####`guest_account`
 
@@ -136,7 +139,7 @@ Limit in MB of the volume. Useful when combined with `time_machine`.
 
 ```ruby
 class { 'netatalk' :
-    host_name      => 'Time Capsule',
+    host_name     => 'Time Capsule',
     listen_iface  => 'eth0',
     log_file      => '/var/log/macbackups.log',
     log_level     => 'default:info',
@@ -175,9 +178,9 @@ TBD
 In no particular order
 
   * Expose the rest of configuration parameters
-  * fill init.pp
+  * fill `init.pp`
   * Firewall port 548
-  * Kerberos testing
+  * Kerberos testing. Keytab and all
   * gem auto-testing?
   * Test variable substitutions and explain here
   * SElinux depth tests
