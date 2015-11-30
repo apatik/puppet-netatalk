@@ -19,7 +19,7 @@ Module for configuring Netatalk v3.x
 
 Tested on CentOS 6.7, CentOS 7.1. Help to support other operating systems is welcome. See `params.pp`
 
-Current there is no netatalk rpm available from the usual repositories but a source rpm can be obtained from their [wiki](http://netatalk.sourceforge.net/).
+Currently there is no netatalk rpm available from the usual repositories but a source rpm can be obtained from their [wiki](http://netatalk.sourceforge.net/).
 
 Every now and then I publish a final rpm in my blog [https://www.nbalonso.com](https://www.nbalonso.com). Please use the search to find the most recent version.
 
