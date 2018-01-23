@@ -40,54 +40,54 @@ Note: If you don't plan to modify the server defaults this is not required. Just
 
 All the parameters listed below are optional.
 
-#####`host_name`
+##### `host_name`
 
 Server name to be displayed to clients instead of the server name. Example `host_name => 'Mac Server'`
 
-#####`ad_domain`
+##### `ad_domain`
 
 Domain to be appended to the username when authenticating. Useful for AD environments that require it
 
-#####`listen_iface`
+##### `listen_iface`
 
 Name of the network interface to bind. Example `listen_iface => 'eno1'`
 
-#####`listen_ip`
+##### `listen_ip`
 
 IP address of the network interface to bind. Example `listen_ip => '10.0.0.1'`
 
-#####`log_file`
+##### `log_file`
 
 File where the service should log. Example `log_file => '/var/log/netatalk.log'`
 
-#####`log_level`
+##### `log_level`
 
 Specify how verbose should the log be. Example `log_level => 'default:info'`
 
-#####`afp_stats`
+##### `afp_stats`
 
 Write message status to the log file. Useful to know about open volumes, sessions... Example `afp_stats => true`
 
-#####`uam_list`
+##### `uam_list`
 
 List of user authentication modules. Used to allow empty passwords, kerberos authentication...
 Valid values: for guests `uams_guest.so`, Diffie-Hellman key exchange `uams_dhx.so`, Diffie-Hellman key exchange v2 `uams_dhx2.so` and for Kerberos`uam_gss.so`
 
 Example `uam_list => 'uams_guest.so uams_dhx.so uams_dhx2.so uam_gss.so'`
 
-#####`guest_account`
+##### `guest_account`
 
 Unix account on the server where the guest will be mapped. Example `guest_account => 'afpguest'`
 
-#####`max_connections`
+##### `max_connections`
 
 Number of maximum simultaneous connections. Example `max_connections => 50`
 
-#####`login_message`
+##### `login_message`
 
 Message that will appear on the client when connecting to a volume. Example `login_message => "This is a linux server"`
 
-#####`mimic_model`
+##### `mimic_model`
 
 Computer icon that will be displayed on the clients' Finder. Example `mimic_model => 'Xserve'`
 
@@ -101,39 +101,47 @@ netatalk::share { 'My afp share':
 
 All other parameters listed below are optional.
 
-#####`hosts_allow`
+##### `directory_perm`
+
+Force created directories to have the given permissions
+
+##### `file_perm`
+
+Force created files to have the given permissions
+
+##### `hosts_allow`
 
 List of host computers that are allowed to mount the volume.
 
-#####`hosts_deny`
+##### `hosts_deny`
 
 List of hosts that will not be allowed to mount the volume.
 
-#####`valid_users`
+##### `valid_users`
 
 List of users allowed to mount the volume. Groups must be preceded by the @ symbol.
 
-#####`read_only`
+##### `read_only`
 
 If set to true the volume will be read only.
 
-#####`rw_list`
+##### `rw_list`
 
 Users and/or that are allowed to read and write to the volume.
 
-#####`disconnect_time`
+##### `disconnect_time`
 
 Number of hours to maintain the sessions as disconnected before dropping them.
 
-#####`time_machine`
+##### `time_machine`
 
 Wether to allow Time Machine to backup to the volume.
 
-#####`enable_spotlight`
+##### `enable_spotlight`
 
 Whether to enable Spotlight searches.
 
-#####`cap_limit`
+##### `cap_limit`
 
 Limit in MB of the volume. Useful when combined with `time_machine`.
 

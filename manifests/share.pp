@@ -2,6 +2,8 @@
 #
 define netatalk::share (
     $share_path,
+    $directory_perm   = false,
+    $file_perm        = false,
     $hosts_allow      = false,
     $hosts_deny       = false,
     $valid_users      = false,

@@ -2,6 +2,12 @@
 [<%= @name %>]
 path = <%= @share_path %>
 <%# name and path are mandatory -%>
+<% if @directory_perm -%>
+directory perm = <%= @directory_perm %>
+<% end -%>
+<% if @file_perm -%>
+file perm = <%= @file_perm %>
+<% end -%>
 <% if @hosts_allow -%>
 hosts allow = <%= @hosts_allow %>
 <% end -%>
